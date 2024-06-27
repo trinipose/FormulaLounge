@@ -21,7 +21,8 @@ Audiowide
 body {background-color: var(--dark-grey);}
 
 
-/* navbar */
+
+  /* navbar */
   .navbar {
   background-color: var(--dark); }
 
@@ -39,7 +40,7 @@ body {background-color: var(--dark-grey);}
   .navbar-toggler {margin-right: 0.5em;
   color: var(--light-grey);}
 
-  .navbar-toggler-icon {color: var(--white);}
+  .navbar-toggler-icon {filter: invert(1);}
 
   .nav-link {font-family: "Audiowide";
     text-shadow: 0px 0px 10px #DA9913;}
@@ -53,6 +54,14 @@ body {background-color: var(--dark-grey);}
           
       }
     .nav-link {font-size: 4.5vw;}
+    
+    .carousel-caption {
+      text-align: center;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+    }
+  
   }
                                   
   @media (min-width: 1200px) {/* Larger screens */
