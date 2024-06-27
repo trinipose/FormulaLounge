@@ -40,6 +40,8 @@ body {background-color: var(--dark-grey);}
   .navbar-toggler {margin-right: 0.5em;
   color: var(--light-grey);}
 
+ .navbar-collapse {text-align: center;}
+
   .navbar-toggler-icon {filter: invert(1);}
 
   .nav-link {font-family: "Audiowide";
