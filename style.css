@@ -49,10 +49,10 @@ body {background-color: var(--dark-grey);}
 
    @media (max-width: 768px) {/* Smaller screens */
     .navbar-brand {
-          font-size: 5vw;
+          font-size: 6vw;
           
       }
-    .nav-link {font-size: 3vw;}
+    .nav-link {font-size: 4.5vw;}
   }
                                   
   @media (min-width: 1200px) {/* Larger screens */
@@ -240,4 +240,3 @@ box-shadow: 0px 0px 18px var(--white);}
   border-width: 0px;
   border-radius: 15px;}
 
-/* misc */
