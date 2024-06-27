@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Gruppo&family=Racing+Sans+One&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* My Font List
+Urbanist
+Gruppo
+Racing Sans One
+Audiowide
+*/
+
+:root { 
+  --light-grey: #BCC3C9;
+  --white: #E3E9F1;
+  --red: #D10607;
+  --dark: #161B27;
+  --yellow: #F9D901;
+  --dark-yellow:#DA9913;
+  --dark-grey: #1D2226;
+}
+
+body {background-color: var(--dark-grey);}
+
+
+/* navbar */
+  .navbar {
+  background-color: var(--dark); }
+
+  .navbar .navbar-nav .nav-link {
+  color: var(--white); }
+
+  .navbar .navbar-nav .nav-link:hover {
+  color: var(--red);
+  text-shadow: 0px 0px 10px #E3E9F1;}
+
+  .navbar-brand { font-family: 'Audiowide';
+  color: var(--red);
+  margin-left: 0.5em;}
+
+  .navbar-toggler {margin-right: 0.5em;
+  color: var(--light-grey);}
+
+  .navbar-toggler-icon {color: var(--white);}
+
+  .nav-link {font-family: "Audiowide";
+    text-shadow: 0px 0px 10px #DA9913;}
+
+  .navbar-brand:hover {text-shadow: 0px 0px 15px #E3E9F1;
+    color: var(--red);}  
+
+   @media (max-width: 768px) {/* Smaller screens */
+    .navbar-brand {
+          font-size: 5vw;
+          
+      }
+    .nav-link {font-size: 3vw;}
+  }
+                                  
+  @media (min-width: 1200px) {/* Larger screens */
+   .navbar-brand {
+          font-size: 2.5vw; 
+      }
+  .nav-link {font-size: 1.4vw;}
+  }
+  
+/* carousel */
+
+  .carousel-item {
+    height: 550px;}
+  
+  .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%; } 
+
+  .carousel-caption {width: 300px;}
+
+  h1 {
+    font-size: 2.5rem;
+    font-family: "Racing Sans One";
+    color: var(--main-color);
+    text-shadow: 3px 2px 0px #E52D0D;} 
+
+  .shadep{
+    font-size: 1.4rem;
+    font-family: "Urbanist";
+    font-weight:700;
+    text-shadow: 3px 2px 2px #DA9913;
+    color: white; } 
+  
+/* features */
+
+.loc{text-shadow: 0px 0px 15px var(--yellow);}
+
+.cul {text-shadow: 0px 0px 15px var(--yellow);}
+
+.shop{text-shadow: 0px 0px 15px var(--yellow);}
+
+h3 {font-family: "Audiowide";
+color: var(--white);
+}
+
+p {color: var(--white);
+text-shadow: 0px 0px 20px var(--white); 
+font-family: "Urbanist";
+font-weight:400;
+font-size:1.1em}
+
+a {font-family: "Urbanist";
+color: var(--dark-yellow); 
+text-shadow: 0px 0px 20px var(--white); 
+font-size:1.2em}
+
+a:hover {color: var(--white);
+  text-shadow: 0px 0px 20px var(--red); }
+
+.fa-chart-bar{color: var(--white)}
+
+.fa-pencil-alt {color: var(--white);}
+
+
+
+/*Gallery*/
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    box-shadow:0px 0px 16px var(--light-grey);}
+
+
+.container-xl {margin-bottom: 30px;}
+
+/* lightbox */
+
+.lightbox .lb-caption {
+  font-family: "Gruppo";
+}
+
+/* footer */
+
+@media (max-width: 768px) 
+{
+
+  .footer {
+    font-size: calc (1rem+2vw);
+   
+  }
+}
+
+footer { background-color: var(--dark-yellow);}
+/* button */
+
+.newsletter {
+  font-family: "Audiowide";
+  color: var(--white);
+  text-shadow: 0px 0px 10px var(--yellow);
+  background-color: var(--red);
+  border-radius: 15px;
+  border-color: var(--dark-grey);
+  border-width: 3px;
+  box-shadow: 0px 0px 20px var(--dark);
+}
+
+.newsletter:hover {
+  color: var(--red);
+  text-shadow: 0px 0px 10px var(--yellow);
+  background-color: var(--white);
+  border-radius: 15px;
+  border-color: var(--red);
+  border-width: 3px;
+  box-shadow: 0px 0px 20px var(--white);
+}
+
+.footer.text-capitalize.text-light {text-shadow: 0px 0px 18px var(--red);}
+
+/* modal */
+
+.modal-content {background-color: var(--dark-yellow);}
+
+.modal-header {background-color: var(--red);}
+
+.modal-footer {background-color: var(--dark);}
+
+.modal-title {font-family: "Audiowide";
+color: var(--white);
+text-shadow: 0px 0px 18px var(--dark);
+font-size: 1.8rem;
+}
+
+.ModalDescription {color: var(--red);
+font-family: "Racing Sans One";
+text-shadow: 0px 0px 18px var(--white);
+font-size: 1.2rem;
+text-align: center;}
+
+.form-label {color: var(--white);
+  text-shadow: 0px 0px 18px var(--red);
+font-family: "Racing Sans One";
+font-size: 1.1rem;
+}
+.valid-feedback {
+  font-family: "Urbanist";
+  font-weight: bold;
+  text-shadow: 0px 0px 18px var(--white);
+}
+.invalid-feedback {
+  font-family: "Urbanist";
+  font-weight: bold;
+  text-shadow: 0px 0px 18px var(--white);
+  color: var(--red);
+}
+
+.form-control {
+  font-family: "Gruppo";
+  color: var(--dark);
+}
+
+.form-select {
+  font-family: "Gruppo";
+  color: var(--dark);
+}
+
+.btn { font-family: "Racing Sans One";
+background-color: var(--dark-yellow);
+border-width: 0px;
+border-radius: 15px;
+box-shadow: 0px 0px 13px var(--white);}
+
+.btn:hover { font-family: "Racing Sans One";
+  background-color: var(--white);
+  color: var(--dark-yellow);
+  border-width: 0px;
+  border-radius: 15px;}
+
+.btn.btn-primary {background-color: var(--red);
+box-shadow: 0px 0px 18px var(--white);}
+
+.btn.btn-primary:hover {font-family: "Racing Sans One";
+  background-color: var(--white);
+  color: var(--red);
+  border-width: 0px;
+  border-radius: 15px;}
+
+/* misc */
